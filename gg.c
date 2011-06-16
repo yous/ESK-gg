@@ -1,14 +1,16 @@
 #include <stdio.h> 
 
-int print_n_1(int n)
+int print_n(int n)
 {
-  printf("%d * 1 = %d\n", n, n * 1);
+  int i;
+  for (i = 1; i < 10; i++)
+    printf("%d * %d = %d\n", n, i, n * i);
 }
 
 int main()
 {
   int n;
   scanf("%d", &n);
-  print_n_1(n);
+  print_n(n);
   return 0;
 }
