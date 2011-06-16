@@ -1,14 +1,14 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-int print_n_m(int m)
+int print_n_m(int n, int m)
 {
-  printf("n * %d = %d\n", m, 7 * m);
+  printf("%d * %d = %d\n", n, m, n * m);
 }
 
 int main()
 {
-  int m;
-  scanf("%d", &m);
-  print_n_m(m);
+  int n, m;
+  scanf("%d %d", &n, &m);
+  print_n_m(n, m);
   return 0;
 }
